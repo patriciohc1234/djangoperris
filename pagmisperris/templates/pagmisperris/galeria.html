@@ -1,0 +1,77 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="js/jquery.js"></script>
+        <title>Geleria mis perris</title>
+		<link rel="stylesheet" href="{% static 'css/galeria.css' %}">
+    </head>
+    <body>
+      <div class="contenedor">
+    		<header> 
+    			<div class="logo">
+    				<img src="{% static 'img/logo.png' %}" alt="Logo">
+    				<a href="#">Mis Perris</a>
+    			</div>
+
+    			<nav> 
+    			<a href="{ % url 'index' %}">Inicio</a>
+				<a href="{% url 'index' %}">Quienes Somos</a>
+				<a href="{% url 'form' %}">Adoptar</a>
+				<a href="{% url 'galeria' %}">Galeria</a>
+                </nav>
+                
+            </header>
+<section id="galeria">
+      <h3>Galeria Mis Perris</h3>
+      <div class="contenedor-galeria">
+          <div class="gal-pet">
+              <img src="{% static 'img/galeria/perro-1.jpg' %}" alt="kylian">
+              <h4>
+                  <p><b>NOMBRE:</b>Kylian</p>
+                  <p><b>SEXO:</b> Macho</p>
+                  <p><b>RAZA:</b> Mestizo</p>
+                  <p><b>EDAD:</b> 7 Meses</p>
+              </h4>
+          </div>
+          <div class="gal-pet">
+              <img src="{% static 'img/galeria/perro-2.jpg' %}" alt="sergi">
+              <h4>
+                  <p><b>NOMBRE:</b>Sergi</p>
+                  <p><b>SEXO:</b> Macho</p>
+                  <p><b>RAZA:</b> Mestizo</p>
+                  <p><b>EDAD:</b> 3 Meses</p>
+              </h4>
+          </div>
+          <div class="gal-pet">
+              <img src="{% static 'img/galeria/perro-3.jpg' %}" alt="machblack">
+              <h4>
+                  <p><b>NOMBRE:</b>Machine Black</p>
+                  <p><b>SEXO:</b> Macho</p>
+                  <p><b>RAZA:</b> Mestizo</p>
+                  <p><b>EDAD:</b> 2 Años</p>
+              </h4>
+          </div>
+          <div class="gal-pet">
+            <img src="{% static 'img/galeria/perro-4.jpg' %}" alt="nessy">
+            <h4>
+                <p><b>NOMBRE:</b>Nessy</p>
+                <p><b>SEXO:</b> Macho</p>
+                <p><b>RAZA:</b> Mestizo</p>
+                <p><b>EDAD:</b> 2 Años</p>
+            </h4>
+        </div>
+        <div class="gal-pet">
+          <img src="{% static 'img/galeria/perro-5.jpg' %}" alt="perrocnbotas">
+          <h4>
+              <p><b>NOMBRE:</b>Perro Con Botas</p>
+              <p><b>SEXO:</b> Macho</p>
+              <p><b>RAZA:</b> Mestizo</p>
+              <p><b>EDAD:</b> 4 Meses</p>
+          </h4>
+        </div>
+</section>
+<footer>
+	<small><em>&copy;Todos los Derechos Reservados.</em></small>
+</footer>

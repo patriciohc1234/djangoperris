@@ -1,0 +1,120 @@
+{% load static %}
+<!doctype html>
+<html lang=es>
+<head>
+    <meta charset="utf-8">
+    <title>Mis Perris</title>
+    <meta name="description" content="Pagina Mis Perris">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximun-scale=1.0,minimun-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+	<div class="contenedor">
+		<header> 
+			<div class="logo">
+				<img src="{% static 'img/logo.png' %}" alt="Logo">
+				<a href="#">Mis Perris</a>
+			</div>
+
+			<nav> 
+				<a href="{ % url 'index' }">Inicio</a>
+				<a href="{% url 'index' }">Quienes Somos</a>
+				<a href="{% url 'form' }">Adoptar</a>
+				<a href="{% url 'galeria' }">Galeria</a>
+			</nav>
+		</header>
+
+
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="{% static 'img/carrusel/perroc1.jpg' %}"  alt="familia1" style="width:100%;">
+            
+          </div>
+    
+          <div class="item">
+            <img src= "{% static 'img/carrusel/perroc2.jpg' %}"alt="familia2" style="width:100%;">
+           
+          </div>
+        
+          <div class="item">
+            <img src="{% static 'img/carrusel/perroc3.jpg' %}"alt="familia3" style="width:100%;">
+           
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+      <div class="barra">
+				<div><b>+ 56 9 98765431</b></div>
+				<div><b>Al servicio de perros abandonados que buscan un hogar</b></div>
+				<div class="social">
+          <a href="#"><img src="{% static 'img/sociales/fb.png'}" alt="Logo Facebook" title="Facebook"></a>
+					<a href="#"><img src="{% static 'img/sociales/gp.png' %}" alt="Logo Google+" title="Google+"></a>
+					<a href="#"><img src="{% static 'img/sociales/ig.png' %}" alt="Logo Instagram" title="Instagram"></a>
+					<a href="#"><img src="{% static 'img/sociales/em.png' %}" alt="Logo Mensaje" title="Correo"></a>
+				</div>
+			</div>
+
+      
+		<div class="info" id="info">
+   
+			<div class="rescate">
+				<div>
+          <h2>RESCATE</h2>
+          <h3>Etapa Uno</h3>
+          _______________
+          <p><br>Rescatamos Perros en Situación de Peligro y/o Abandono. Los Rehabilitamos y los Preparamos para
+            Buscarles un Hogar.</p>
+        </div>
+        <div><img src="{% static 'img/happy.jpeg' %}" alt ""></div>
+			</div>
+
+			<div class="funding">
+				<div><img src="{% static 'img/comida.jpg' %}" alt""></div>
+				<div>
+          <h2>CROWDFUNDING</h2>
+  				<h3>FINANCIAMIENTO</h3>
+          _______________
+          <p><br>Sigue Nuestras Redes Sociales para Informarte Acerca de las Diversas Campañas y Actividades que
+            Realizamos para Obtener Financiamiento y Seguir Ayudando.</p>
+        </div>
+        <div>
+          <input type="button" id="campanas" name="campanas" value="Campañas">
+        </div>
+      </div>
+		</div>
+		
+      </div>
+		</div>
+    
+        </div>
+<footer>
+	<small><em>&copy;Todos los Derechos Reservados.</em></small>
+</footer>
+</body>
+</html>

@@ -40,3 +40,15 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'pagmisperris/post_edit.html', {'form': form})
+	
+	
+def index(request):
+    return render(request, 'pagmisperris/index.html', {})
+
+def galeria(request):
+    return render(request, 'pagmisperris/galeria.html', {})
+	
+def form(request):
+    return render(request, 'pagmisperris/form.html', {})
+
+

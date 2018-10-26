@@ -1,0 +1,281 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family:verdana;
+	/*Define como se calcularán los cuadrados en base al ancho y al alto con respecto al padding*/
+	box-sizing: border-box;
+}
+
+/*Contenedor de toda la Página*/
+.contenedor {
+	background:#6dccaa;
+	margin:auto;
+	/* Flexbox */
+	/*Display es la propiedad que indica como se verán los elementos flex indica que el elemento tendrá características responsivas	*/
+	display:flex;
+	/*Flex-flow indica como se desplegarán los elementos dentro de un contenedor flex*/
+	flex-flow:row wrap;
+}
+
+/*Cuerpo de la Página*/
+body {
+	background:#fff;
+	color: black;
+}
+
+/*Todo lo de la barra superior*/
+header {
+	width:100%;
+	padding:20px;
+	background: #85d4b7;
+
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+/*Cuadro donde va el Logo y el Nombre de la Fundación*/
+header .logo {
+	color:#fff;
+	font-size:30px;
+}
+
+/*Logo*/
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+header .logo a {
+	color:black;
+	text-decoration: none;
+	line-height:50px;
+}
+
+/*Menú Superior*/
+header nav {
+	width:50%;
+	margin-right: 100px;
+
+	/* Flexbox */
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+
+header nav a {
+	color:black;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+}
+
+header nav a:hover {
+	background:#6dccaa;
+}
+#caption {
+	position:center;
+	top:45%;
+	left:45%;
+  }
+
+/*Todo lo de la barra bajo del carrusel*/
+.barra {
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	color: black;
+
+	/*Flex*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*Los Botones de Redes Sociales*/
+.barra .social {
+	width: 20%;
+	/*Flex*/
+	display:flex;
+}
+
+.social a{
+	background: white;
+	border-radius: 150px;
+	text-align: center;
+	justify-content: space-between;
+	object-fit: contain;
+}
+
+.social img{
+	width: 90%;
+	border-radius: 150px;
+	justify-content: space-around;
+}
+
+/*Zona donde está la informacion de CROWDFUNDING y RESCATES*/
+.info{
+	display: flex;
+	flex-direction: row;
+}
+
+/*Sub-seccion de Rescates*/
+.info .rescate {
+	padding-top:5%;
+	background: #fff;
+	color: black;
+	text-align: right;
+	border-right: 15px solid #fff;
+
+	/*FLEX*/
+	display: flex;
+	flex: 40%;
+	flex-direction: column;
+}
+
+.rescate div{
+	flex: 1 1 20%;
+}
+
+.rescate img {
+	width: 50%;
+	margin-right: 3px;
+}
+
+
+/*Sub-seccion de Crowfunding*/
+.info .funding {
+	padding-top:10px;
+	background: #fff;
+	color: black;
+	text-align: left;
+	border-left: 15px solid #fff;
+
+	/*FLEX*/
+	display: flex;
+	flex: 40%;
+	flex-direction: column;
+}
+
+.funding div{
+	flex: 1 1 20%;
+}
+
+.funding img {
+	width: 50%;
+	margin-left: 3px;
+}
+
+.funding #campanas{
+	background: #fff;
+	border: 1px solid black;
+	margin: 20px 5px;
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 38px;    /* Width of image */
+	height: 38px;   /* Height of image */
+	background-color: gray;
+	background-size: cover;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: lightgray;
+}
+ #galeria {
+    background: #6dccaa;;
+    color: black;
+	text-align: center;
+	width:100%;
+}
+
+#galeria .contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gal-pet {
+    margin: 20px;
+}
+
+.gal-pet img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+footer{
+	width: 100%;
+	background:gray;
+	padding:10px;
+}
+
+@media screen and (max-width: 800px) {
+	/*https://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
+	.contenedor {
+		width: 100%;
+
+		/*Flex*/
+		display: flex;
+		flex-direction:column;
+	}
+
+	header {
+		padding:0;
+
+		/*Flex*/
+		flex-direction:column;
+	}
+
+	header .logo {
+		margin:20px 0;
+	}
+
+	header nav {
+		width: 100%;
+		margin-right: 0px;
+
+		/*Flex*/
+		flex-direction:column;
+	}
+
+	header nav a{
+		background:#6dccaa;
+		width:100%;
+		border: 1px solid #85d4b7;
+	}
+
+	header nav a:hover{
+		background:#60b294;
+	}
+
+	.barra{
+		width: 100%;
+
+		/*Flex*/
+		flex-direction: column-reverse;
+		flex-wrap: column;
+	}
+
+
+
+@media screen and (max-width: 600px) {
+
+}
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+}
