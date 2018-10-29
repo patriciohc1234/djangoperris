@@ -3,12 +3,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <script src="js/jquery.js"></script>
         <link rel="stylesheet" href="{% static 'css/formulario.css' %}">
         <title>Formulario Adopción Mis Perris</title>
     </head>
-    <body>
-      <div class="contenedor">
+     <div class="contenedor">
     		<header> 
     			<div class="logo">
     				<img src="{% static 'img/logo.png' %}" alt="Logo">
@@ -23,6 +21,9 @@
                 </nav>
                 
             </header>
+                
+            </header>
+			<section>
             <form action="" class="formulario">
                 <h1 class="formularios-titulo">Adopta a un perri</h1>
                 <input type="email" class="formulario-input" placeholder="Ingrese  Correo Electronico">
@@ -71,9 +72,10 @@
         
         
                 <input type="submit" class="formulario-submit">
+		</section>
             </form>
          <footer>
            Todos los derechos Reservados &#169;
          </footer>  
-            <script src="{% static 'js/verificar.js' %}"> </script> 
-    </body>
+    </body>        <script src="{% static 'js/verificar.js' %}"> </script> 
+</html>

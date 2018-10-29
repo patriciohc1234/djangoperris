@@ -5,8 +5,8 @@ from django.utils import timezone
 class PostTestCase( TestCase ):
   def test_postPublish1( self ):
 	#Arrange
-	expected=3
-	result=1
+	expected=2
+	result=2
 	#act
 	result=2
 	#assert
@@ -17,7 +17,7 @@ class PostTestCase( TestCase ):
 	expected=4
 	result=1
 	#act
-	result=2
+	result=5
 	#assert
 	self.assertAreEqual(expected,result)
 
@@ -26,7 +26,7 @@ class PostTestCase( TestCase ):
 	expected=5
 	result=1
 	#act
-	result=2
+	result=6
 	#assert
 	self.assertAreEqual(expected,result)
 

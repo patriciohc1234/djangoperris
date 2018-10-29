@@ -1,15 +1,64 @@
-
-.formulario {
-    background:white;
-    width: 450px;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 50px;
-    padding: 20px;
-    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
-    position: relative;
-
+/*Cuerpo de la Página*/
+body {
+    width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #85d4b7;
 }
+
+/*Todo lo de la barra superior*/
+contenedor {
+	width:100%;
+	padding:20px;
+	background: #85d4b7;
+
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+    flex-wrap:wrap;
+    margin: 0%;
+}
+header .logo {
+	color:black;
+	font-size:30px;
+}
+
+/*Logo*/
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+header .logo a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
+
+/*Menú Superior*/
+header nav {
+	width:100%;
+	margin-right: 100px;
+
+	/* Flexbox */
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+
+header nav a {
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+}
+
+header nav a:hover {
+	background:#6dccaa
+}
+
 .formulario-titulo{
     text-align: center;
     margin-top: 0%;
