@@ -25,7 +25,7 @@ SECRET_KEY = '=p(_+4awb_xpv*rt@z)3#k7#t=x)ldaaf)f3-gaap)o-pt#*gg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'pato2409.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'myperripato.pythonanywhere.com']
 
 
 # Application definition

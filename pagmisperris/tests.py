@@ -2,32 +2,27 @@ from django.test import TestCase
 from .models import Post
 from django.utils import timezone
 
-class PostTestCase( TestCase ):
-  def test_postPublish1( self ):
-	#Arrange
-	expected=2
-	result=2
-	#act
-	result=2
-	#assert
-	self.assertAreEqual(expected,result)
+class TestCase1( TestCase ):
 
-  def test_postPublish2( self ):
-	#Arrange
-	expected=4
-	result=1
-	#act
-	result=5
-	#assert
-	self.assertAreEqual(expected,result)
+    def test_Post1( self ):
+      #Arrange
+      expected = 1
+      result = 0
+      #Act
+      Post.objects.create( author = "patricio", title="Sample Title" , text="Test")
+      #Assert
+      self.assertEqual(expected,result)
 
-  def test_postPublish3( TestCase ):
-	#Arrange
-	expected=5
-	result=1
-	#act
-	result=6
-	#assert
-	self.assertAreEqual(expected,result)
+class TestCase1( TestCase ):
+
+   def test_Post2( self ):
+     #Arrange
+     expected = 1
+     result = 0
+     #Act
+     Post.objects.filter(published_date__lte=timezone.now()
+     #Assert
+     self.assertEqual(expected,result)
+
 
 
