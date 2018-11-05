@@ -1,6 +1,28 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('http://soscreacionesweb.com/sites/default/files/fondo-slide-2_0.jpg');
+}
+.page-header logo {
+	color:black;
+	font-size:30px;
+}
+
+/*Logo*/
+.page-header logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+.page-header logo a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
 
 /*Menú Superior*/
-header nav {
+.page-header nav {
 	width:100%;
 	margin-right: 100px;
 
@@ -10,25 +32,18 @@ header nav {
 	align-items:center;
 }
 
-header nav a {
+.page-header nav a {
 	color:#fff;
 	text-align: center;
 	text-decoration: none;
 	padding:10px;
 }
 
-header nav a:hover {
-	background:#6dccaa;
+.page-header nav a:hover {
+	background:#6dccaa
 }
-h1 a {
-    color: #FCA205;
-}
-body {
-    padding-left: 15px;
-}
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
+body{
+	margin: 0;
 }
 .page-header {
     background-color: #ff9400;
