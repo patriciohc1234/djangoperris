@@ -9,4 +9,5 @@ urlpatterns = [
 	path('galeria', views.galeria, name='galeria'),
 	path('form', views.form, name='form'),
 	path('post/new/', views.post_new, name='post_new'),
+
 ]

@@ -122,6 +122,10 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+<<<<<<< HEAD
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+=======
+LOGIN_REDIRECT_URL = '/'
+>>>>>>> 8e06fb4af8b88f497bd3c58fe28f5e6be3677cd4
